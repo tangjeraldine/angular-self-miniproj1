@@ -1,1 +1,40 @@
-<router-outlet></router-outlet> <app-login></app-login>
+<nav class="navbar">
+  <div class="logo">
+    <img
+      style="display: inline-flex"
+      src="https://cdn-icons-png.flaticon.com/512/5240/5240778.png"
+      alt=""
+    />
+    <img
+      style="display: inline-flex"
+      src="https://cdn-icons-png.flaticon.com/512/2173/2173478.png"
+      alt=""
+    />
+  </div>
+  <ul class="nav-links">
+    <div class="menu">
+      <li><a href="./Main.html">Home</a></li>
+
+      <li class="services">
+        <a href="./Main.html">My Portfolio</a>
+        <ul class="dropdown">
+          <li>
+            <a href="./ProfessionalExp.html">Professional Experience</a>
+          </li>
+
+          <li><a href="./Education.html">Education</a></li>
+
+          <li><a href="./Projects.html">Past Projects</a></li>
+        </ul>
+      </li>
+      <li><a href="./Contact.html">Contact Me</a></li>
+    </div>
+  </ul>
+</nav>
+<br />
+<router-outlet></router-outlet>
+<br />
+<app-login></app-login>
+<footer class="foot">
+  <small style="text-align: center">Copyright by Jeraldine, 2022</small>
+</footer>

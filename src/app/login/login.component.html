@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div [ngStyle]="{ 'text-align': 'center' }">
+  <h1 [ngStyle]="{ 'margin-top': '100px' }">Welcome!</h1>
+  <h3>Please log in to begin using the site.</h3>
+</div>
+<div [ngStyle]="{ margin: '100px' }">
+  <fieldset>
+    <legend>Log In</legend>
+    <form action="#">
+      <table>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td [attr.colspan]="2"><button>Log In!</button></td>
+        </tr>
+      </table>
+    </form>
+  </fieldset>
+</div>
